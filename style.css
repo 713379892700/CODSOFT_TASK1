@@ -1,0 +1,189 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7ff;
+    color: #20243a;
+    line-height: 1.7;
+}
+
+header {
+    background: #151932;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h2 {
+    color: #8da7ff;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #8da7ff;
+}
+
+section {
+    padding: 70px 8%;
+}
+
+#home {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #e4eaff, #f9faff);
+}
+
+#home h1 {
+    font-size: clamp(32px, 5vw, 54px);
+    color: #242d62;
+}
+
+#home h3 {
+    color: #5266c8;
+    margin: 10px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #242d62;
+}
+
+#home a,
+#resume a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #4559c7;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#home a:hover,
+#resume a:hover {
+    background: #263786;
+    transform: translateY(-3px);
+}
+
+#about,
+#projects {
+    background: white;
+}
+
+#skills p {
+    background: #e8ecff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    background: #f7f8ff;
+    padding: 24px;
+    margin: 18px 0;
+    border-radius: 12px;
+    border: 1px solid #e1e5fa;
+    box-shadow: 0 5px 18px #20243a10;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px #20243a20;
+}
+
+form {
+    max-width: 500px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0;
+    border: 1px solid #ccd2e8;
+    border-radius: 8px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    padding: 12px 24px;
+    background: #4559c7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font: inherit;
+}
+
+button:hover {
+    background: #263786;
+}
+
+footer {
+    background: #151932;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+        padding: 18px 5%;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+
+    #home {
+        min-height: 60vh;
+    }
+}
